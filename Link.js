@@ -109,7 +109,78 @@ app.config(function($routeProvider) {
             .when("/Blog_2", {
                 templateUrl: "blog/Blog_2.html"
             })
-
+            .when("/A-Line Flare Hem", {
+                templateUrl: "IORA/Product/A-Line Flare Hem/A-Line Flare Hem.html"
+            })
+            .when("/Asymmetrical Flap Top", {
+                templateUrl: "IORA/Product/Asymmetrical Flap Top/Asymmetrical Flap Top.html"
+            })
+            .when("/Basic Mayar Top", {
+                templateUrl: "IORA/Product/Basic Mayar Top/Basic Mayar Top.html"
+            })
+            .when("/Basic PU Skorts", {
+                templateUrl: "IORA/Product/Basic PU Skorts/Basic PU Skorts.html"
+            })
+            .when("/Centre Scrunched Knit Blouse", {
+                templateUrl: "IORA/Product/Centre Scrunched Knit Blouse/Centre Scrunched Knit Blouse.html"
+            })
+            .when("/Crew Sweater", {
+                templateUrl: "IORA/Product/Crew Sweater/Crew Sweater.html"
+            })
+            .when("/Criss-Cross Knit Top", {
+                templateUrl: "IORA/Product/Criss-Cross Knit Top/Criss-Cross Knit Top.html"
+            })
+            .when("/Flare Bottom Pants", {
+                templateUrl: "IORA/Product/Flare Bottom Pants/Flare Bottom Pants.html"
+            })
+            .when("/Highneck Knit Tank Top", {
+                templateUrl: "IORA/Product/Highneck Knit Tank Top/Highneck Knit Tank Top.html"
+            })
+            .when("/Knotted Blouse", {
+                templateUrl: "IORA/Product/Knotted Blouse/Knotted Blouse.html"
+            })
+            .when("/Mandarin Asymmetrical Hem Blouse", {
+                templateUrl: "IORA/Product/Mandarin Asymmetrical Hem Blouse/Mandarin Asymmetrical Hem Blouse.html"
+            })
+            .when("/Midi A-Line Skirt", {
+                templateUrl: "IORA/Product/Midi A-Line Skirt/Midi A-Line Skirt.html"
+            })
+            .when("/Off-Shoulder Knit Top", {
+                templateUrl: "IORA/Product/Off-Shoulder Knit Top/Off-Shoulder Knit Top.html"
+            })
+            .when("/Overlapped Kimono Top", {
+                templateUrl: "IORA/Product/Overlapped Kimono Top/Overlapped Kimono Top.html"
+            })
+            .when("/Panelled Colour Blouse", {
+                templateUrl: "IORA/Product/Panelled Colour Blouse/Panelled Colour Blouse.html"
+            })
+            .when("/Polka Dot Jumpsuit", {
+                templateUrl: "IORA/Product/Polka Dot Jumpsuit/Polka Dot Jumpsuit.html"
+            })
+            .when("/Puffy Polka Dot Top", {
+                templateUrl: "IORA/Product/Puffy Polka Dot Top/Puffy Polka Dot Top.html"
+            })
+            .when("/Raglan Stripes Knit", {
+                templateUrl: "IORA/Product/Raglan Stripes Knit/Raglan Stripes Knit.html"
+            })
+            .when("/Sleveless Tunic Top", {
+                templateUrl: "IORA/Product/Sleveless Tunic Top/Sleveless Tunic Top.html"
+            })
+            .when("/Straight-Cut Jumpsuit", {
+                templateUrl: "IORA/Product/Straight-Cut Jumpsuit/Straight-Cut Jumpsuit.html"
+            })
+            .when("/Stripes Magyar Top", {
+                templateUrl: "IORA/Product/Stripes Magyar Top/Stripes Magyar Top.html"
+            })
+            .when("/Twist Polka Dot Top", {
+                templateUrl: "IORA/Product/Twist Polka Dot Top/Twist Polka Dot Top.html"
+            })
+            .when("/Twisted Puffy Knit Top", {
+                templateUrl: "IORA/Product/Twisted Puffy Knit Top/Twisted Puffy Knit Top.html"
+            })
+            .when("/Zippers Tapered Pants", {
+                templateUrl: "IORA/Product/Zippers Tapered Pants/Zippers Tapered Pants.html"
+            })
 
     })
     // kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
