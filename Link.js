@@ -64,9 +64,7 @@ app.config(function($routeProvider) {
             .when("/laluskirts", {
                 templateUrl: "lalu/laluSkirts.html"
             })
-            .when("/lalutops", {
-                templateUrl: "lalu/laluTops.html"
-            })
+           
             .when("/shoe1", {
                 templateUrl: "accessories/Shoes_.html"
             })
@@ -187,25 +185,28 @@ app.config(function($routeProvider) {
             .when("/sizeguide", {
                 templateUrl: "sizeguide.html"
             })
+            .when("/lalu/Contrasting Knit Top", {
+                templateUrl: "lalu/productLalu/ari0/Contrasting Knit Top/Contrasting Knit Top.html"
+            })
     })
-    // kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
-    // var offset = 300;
-    // // thời gian di trượt 0.75s ( 1000 = 1s )
-    // var duration = 150;
-    // $(function() {
-    //     $(window).scroll(function() {
-    //         if ($(this).scrollTop() > offset)
-    //             $('#top-up').fadeIn(duration);
-    //         else
-    //             $('#top-up').fadeOut(duration);
-    //     });
-    //     $('#top-up').click(function() {
-    //         $('body,html').animate({ scrollTop: 0 }, duration);
-    //     });
-    // });
-    // $(function() {
+ 
+    var offset = 300;
+    // thời gian di trượt 0.75s ( 1000 = 1s )
+    var duration = 150;
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > offset)
+                $('#top-up').fadeIn(duration);
+            else
+                $('#top-up').fadeOut(duration);
+        });
+        $('#top-up').click(function() {
+            $('body,html').animate({ scrollTop: 0 }, duration);
+        });
+    });
+    $(function() {
 
-//     $('a').click(function() {
-//         $('body,html').animate({ scrollTop: 0 }, duration);
-//     });
-// });
+    $('a').click(function() {
+        $('body,html').animate({ scrollTop: 0 }, duration);
+    });
+});
