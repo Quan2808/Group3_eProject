@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <!-- Import thư viện JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+    <script src="Link.js"></script>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        #top-up {
+            font-size: 3rem;
+            cursor: pointer;
+            position: fixed;
+            z-index: 9999;
+            color: #004993;
+            bottom: 20px;
+            right: 15px;
+            display: none;
+        }
+        
+        #top-up:hover {
+            color: #333
+        }
+    </style>
+    <title>iORA - Online Shopping</title>
+</head>
+
+<body>
+
+    <body ng-app="myApp">
+        <div class="header">
+            <div class="free">
+                <p>Free Delivery within Singapore $25 minium purchase</p>
+            </div>
+            <div class="possition">
+                <div class="menu">
+                    <div class="locationStore" style="font-size: 15px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                          </svg>
+                        <a style="text-decoration:none;" href="#!findStore"> Find a store</a>
+                    </div>
+                    <div>
+                        <a style="text-decoration:none;" href="#!" style="font-size: 40px; font-family:'Times New Roman', Times, serif ;">
+                            <h1>
+                                iORA
+                            </h1>
+                        </a>
+                    </div>
+                    <div>
+                        <a style="text-decoration:none;" href="#!favourite">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                        </a>
+                        <a style="text-decoration:none;" href="#!shoppingCard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                              </svg>
+                        </a>
+                        <a style="text-decoration:none;" href="#!login">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
+                              </svg>
+                        </a>
+                        <a style="text-decoration:none;" href="">
+                            <span data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+      
+                              </span>
+                        </a>
+
+
+                        <!-- Button trigger modal -->
+
+                        <!-- Modal -->
+                        <!-- <div
+                                class="modal fade" id="staticBackdrop"
+                                 data-bs-backdrop="static" data-bs-keyboard="false"
+                                  tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                   aria-hidden="true">
+                                  <div class="modal-dialog">
+                                    <div style="width: 300%; height: 300px;padding-top: 80px; margin-left:-470px" class="modal-content">
+                                      <button style="margin-left: 90%;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      <div class="modal-header">
+                                        <h7 style id="staticBackdropLabel">WHAT ARE YOU LOOKING FOR?</h7>
+                                      
+                                      </div>
+                                      <div class="modal-body">
+                                       <div > <input type="text"  placeholder="search products..."
+                                         style="width: 1000px;height: 50px;font-size: 30px;
+                                         border-style: hidden; border-bottom-style: solid ;">
+                                         </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Find</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div> -->
+                    </div>
+                </div>
+                <div class="naBar">
+                    <ul>
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropbtn">
+                                    <a style="text-decoration:none;" href="#!iora1">iORA</a>
+                                </div>
+                                <div class="dropdown-content">
+                                    <a href="#!iora7">NEW ARRIVALS</a>
+                                    <a href="#!iora9">TOPS</a>
+                                    <a href="#!iora5">BOTTOMS</a>
+                                    <a href="#!iora8">SKIRTS</a>
+                                    <a href="#!iora6">KNITS & SWEATERS</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropbtn"><a style="text-decoration:none;" href="#!lalu1">LALU</a></div>
+                                <div class="dropdown-content">
+                                    <a href="#!lalubottom">NEW ARRIVALS</a>
+                                    <a href="#!lalunewarri">TOPS</a>
+                                    <a href="#!laluskirts">BOTTOMS</a>
+                                    <a href="#!lalutops">SKIRTS</a>
+                                    <a href="">DRESS/ONE PIECE</a>
+                                    <a href="">KNITS & SWEATERS</a>
+                                    <a href="">OUTERWEAR</a>
+                                    <a href="">OFFICE WEAR</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropbtn"><a style="text-decoration:none;" href="#!Accessories">ACCESSORIES</a></div>
+                                <div class="dropdown-content">
+                                    <a href="#!bags1">BAGS</a>
+                                    <a href="#!shoe1">SHOES</a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li><a style="text-decoration:none;color:yellowgreen; margin-right: 20px; " href="#!onlineexclusive">
+                            ONLINE EXCLUSIVE</a></li>
+                        <li><a href="#!sale" style="text-decoration:none; color:red">SALE</a></li>
+
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropbtn"><a style="text-decoration:none;" href="">BUNDLE DEAL</a></div>
+                                <div class="dropdown-content">
+                                    <a href="#!bundledeal1">2 FOR $29.90</a>
+                                    <a href="#!bundledeal2">2 FOR $49.90</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a style="text-decoration:none;" href="">BACK IN STOCK</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropbtn">STORIES</div>
+                                <div class="dropdown-content">
+                                    <a href="#">iORA</a>
+                                    <a href="#">LALU</a>
+                                    <a href="#">SORA</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div ng-view></div>
+        <!-- footer -->
+        <div>
+
+            <div class="commit">
+                <div><img style="width:20px" height="20px" src="image/return.png" alt=""> 30-day Retail Exchange</div>
+                <div><img style="width:20px" height="20px" src="image/box.png" alt=""> Click and Collect</div>
+                <div><img style="width:20px" height="20px" src="image/lock.png" alt=""> Secure Checkout</div>
+                <div><img style="width:20px" height="20px" src="image/offline.png" alt=""> Worldwide Shipping</div>
+            </div>
+            <div class="container" id="spcae_top">
+                <div class="row">
+                    <div class="box1 col-sm-8">
+                        <h3><b>Sign up for our Newsletter</b></h3>
+                        <h6>Be the first to know about our product launch and exclusive deals.</h6>
+                        <input type="email" placeholder="Email Address *"><button class="btn-custom-light">Subscribe</button>
+                    </div>
+                    <div class="box2 col-sm-4">
+                        <p>
+                            <a href="#!AboutUs"> ABOUT US </a>
+                            <a href="#!ContactUs"> CONTACT US</a>
+                            <a href=""> STORES</a>
+                            <a href=""> STORIES</a>
+                            <a href=""> ON-GOING PROMOTIONS</a>
+                            <a href="#!campaigns"> CAMPAIGNS </a>
+                            <a href=""> CAREERS</a>
+                            <a href=""> SIZE GUIDE</a>
+                            <a href="#!returns-exchange"> RETURNS & EXCHANGE</a>
+                            <a href="#!methods-cost"> DELIVERY METHODS & COSTS</a>
+                        </p>
+
+                    </div>
+                    <p>
+                        Copyright © 2022 iORA SINGAPORE, all rights reserved. <br>
+                        <a href="#!terms" style="text-decoration:none; color:black">Terms of Service</a> | <a href="#!privacy" style="text-decoration:none; color:black">Privacy Policy</a> |
+                        <a href="#!cookies" style="text-decoration:none; color:black">Cookies Policy</a>
+
+                    </p>
+
+                    <div> <br><img style="width: 260px;height: 28px;" src="image/payment-gateway-sg.jpg.webp" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center; font-size:30px;"><a href='#' title="Back to top">&#710;</a></div>
+
+        </div>
+        <script>
+        </script>
+        <div title="Về đầu trang" id="top-up">
+            <i class="fas fa-arrow-circle-up"></i></div>
+    </body>
+</body>
+
+</html>
