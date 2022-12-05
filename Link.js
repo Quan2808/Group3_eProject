@@ -181,7 +181,12 @@ app.config(function($routeProvider) {
             .when("/Zippers Tapered Pants", {
                 templateUrl: "IORA/Product/Zippers Tapered Pants/Zippers Tapered Pants.html"
             })
-
+            .when("/careers", {
+                templateUrl: "careers.html"
+            })
+            .when("/sizeguide", {
+                templateUrl: "sizeguide.html"
+            })
     })
     // kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
     // var offset = 300;
