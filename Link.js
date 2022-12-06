@@ -304,6 +304,26 @@ app.config(function($routeProvider) {
         .when("/iORA SUMPTUOUS CONFIDENCE", {
             templateUrl: "Stories/iORA/iORA SUMPTUOUS CONFIDENCE.html"
         })
+
+
+        
+        .when("/lalu/stories", {
+            templateUrl: "lalu/stories.html"
+        })
+
+        .when("/lalu/stories/lalu2022", {
+            templateUrl: "lalu/stories/lalu2022.html"
+        })
+        .when("/lalu/stories/lalu2021", {
+            templateUrl: "lalu/stories/lalu2021.html"
+        })
+        .when("/lalu/stories/lalu2020", {
+            templateUrl: "lalu/stories/lalu2020.html"
+        })
+        .when("/lalu/stories/lalu2019", {
+            templateUrl: "lalu/stories/lalu2019.html"
+        })
+        
 })
 
 
