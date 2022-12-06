@@ -288,8 +288,22 @@ app.config(function($routeProvider) {
         .when("/lalu/Tiered Flare Skirt", {
             templateUrl: "lalu/productLalu/skirts/Tiered Flare Skirt/Tiered Flare Skirt.html"
         })
-
-
+        //Stories
+        .when("/Stories", {
+            templateUrl: "Stories/Stories.html"
+        })
+        .when("/iORA_Stories", {
+            templateUrl: "Stories/iORA/iORA_Stories.html"
+        })
+        .when("/iORA GLAMOROUS FLARE", {
+            templateUrl: "Stories/iORA/iORA GLAMOROUS FLARE.html"
+        })
+        .when("/iORA COVETED ESSENTIALS", {
+            templateUrl: "Stories/iORA/iORA COVETED ESSENTIALS.html"
+        })
+        .when("/iORA SUMPTUOUS CONFIDENCE", {
+            templateUrl: "Stories/iORA/iORA SUMPTUOUS CONFIDENCE.html"
+        })
 })
 
 
