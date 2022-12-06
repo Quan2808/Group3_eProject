@@ -49,10 +49,10 @@ app.config(function($routeProvider) {
             .when("/bags1", {
                 templateUrl: "accessories/Bags_.html"
             })
-            .when("/lalu1", {
+            .when("/lalu", {
                 templateUrl: "nav/LALU_1.html"
             })
-            .when("/lalu2", {
+            .when("/lalu-page2", {
                 templateUrl: "lalu/LALU_2.html"
             })
             .when("/lalubottom", {
@@ -91,6 +91,9 @@ app.config(function($routeProvider) {
             })
             .when("/campaigns", {
                 templateUrl: "footer/nav/campaigns.html"
+            })
+            .when("/on-going promotions", {
+                templateUrl: "footer/nav/on-going promotions.html"
             })
             .when("/ContactUs", {
                 templateUrl: "footer/nav/ContactUs.html"
@@ -185,11 +188,77 @@ app.config(function($routeProvider) {
             .when("/sizeguide", {
                 templateUrl: "sizeguide.html"
             })
+
+// product dentail laluArrivals            //
             .when("/lalu/Contrasting Knit Top", {
                 templateUrl: "lalu/productLalu/ari0/Contrasting Knit Top/Contrasting Knit Top.html"
             })
+            .when("/lalu/Cropped Buttondown Jacket", {
+                templateUrl: "lalu/productLalu/ari0/Cropped Buttondown Jacket/Cropped Buttondown Jacket.html"
+            })
+            .when("/lalu/Cropped Utilitarian Leather Vest", {
+                templateUrl: "lalu/productLalu/ari0/Cropped Utilitarian Leather Vest/Cropped Utilitarian Leather Vest.html"
+            })
+            .when("/lalu/Cropped Utilitarian PU Vest", {
+                templateUrl: "lalu/productLalu/ari0/Cropped Utilitarian PU Vest/Cropped Utilitarian PU Vest.html"
+            })
+            .when("/lalu/Cut Out Jersey Top", {
+                templateUrl: "lalu/productLalu/ari0/Cut Out Jersey Top/Cut Out Jersey Top.html"
+            })
+            .when("/lalu/Embroidered High Neck Logo Tee", {
+                templateUrl: "lalu/productLalu/ari0/Embroidered High Neck Logo Tee/Embroidered High Neck Logo Tee.html"
+            })
+            .when("/lalu/Silky Printed Shirt", {
+                templateUrl: "lalu/productLalu/ari0/Silky Printed Shirt/Silky Printed Shirt.html"
+            })
+
+// product dentail lalubottom           //
+
+            .when("/lalu/Decorative Button Down Shorts", {
+                templateUrl: "lalu/productLalu/bottom/Decorative Button Down Shorts/Decorative Button Down Shorts.html"
+            })
+            .when("/lalu/Double Button Tapered Jeans", {
+                templateUrl: "lalu/productLalu/bottom/Double Button Tapered Jeans/Double Button Tapered Jeans.html"
+            })
+            .when("/lalu/Elasticated Back Shorts", {
+                templateUrl: "lalu/productLalu/bottom/Elasticated Back Shorts/Elasticated Back Shorts.html"
+            })
+            .when("/lalu/Elasticated Wide-Legged Shorts", {
+                templateUrl: "lalu/productLalu/bottom/Elasticated Wide-Legged Shorts/Elasticated Wide-Legged Shorts.html"
+            })
+            .when("/lalu/Enclosed Waist Trousers", {
+                templateUrl: "lalu/productLalu/bottom/Enclosed Waist Trousers/Enclosed Waist Trousers.html"
+            })
+            .when("/lalu/Panelled Skirt", {
+                templateUrl: "lalu/productLalu/bottom/Panelled Skirt/Panelled Skirt.html"
+            })
+
+// product dentail laluSkirts         //
+            .when("/lalu/Button Down A-Line Skirt", {
+                templateUrl: "lalu/productLalu/skirts/Button Down A-Line Skirt/Button Down A-Line Skirt.html"
+            })
+            .when("/lalu/Denim Straight Front Slit Skirt", {
+                templateUrl: "lalu/productLalu/skirts/Denim Straight Front Slit Skirt/Denim Straight Front Slit Skirt.html"
+            })
+            .when("/lalu/Elasticated A-Line Skirt", {
+                templateUrl: "lalu/productLalu/skirts/Elasticated A-Line Skirt/Elasticated A-Line Skirt.html"
+            })
+            .when("/lalu/Elasticated Ruffle Hem Skirt", {
+                templateUrl: "lalu/productLalu/skirts/Elasticated Ruffle Hem Skirt/Elasticated Ruffle Hem Skirt.html"
+            })
+            .when("/lalu/High Waisted Midi Skirt", {
+                templateUrl: "lalu/productLalu/skirts/High Waisted Midi Skirt/High Waisted Midi Skirt.html"
+            })
+            .when("/lalu/Tiered Flare Skirt", {
+                templateUrl: "lalu/productLalu/skirts/Tiered Flare Skirt/Tiered Flare Skirt.html"
+            })
+
+
     })
  
+
+
+    
     var offset = 300;
     // thời gian di trượt 0.75s ( 1000 = 1s )
     var duration = 150;
