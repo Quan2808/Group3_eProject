@@ -183,10 +183,10 @@ app.config(function($routeProvider) {
             templateUrl: "IORA/Product/Zippers Tapered Pants/Zippers Tapered Pants.html"
         })
         .when("/careers", {
-            templateUrl: "careers.html"
+            templateUrl: "footer/careers.html"
         })
         .when("/sizeguide", {
-            templateUrl: "sizeguide.html"
+            templateUrl: "footer/sizeguide.html"
         })
         //Accessories
         .when("/Ruched Shoulder Bag", {
