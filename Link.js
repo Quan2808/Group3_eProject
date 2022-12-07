@@ -5,19 +5,19 @@ app.config(function($routeProvider) {
             templateUrl: "body.html"
         })
         .when("/findStore", {
-            templateUrl: "menu/findStore.html"
+            templateUrl: "nav/menu/findStore.html"
         })
         .when("/favourite", {
-            templateUrl: "menu/favourite.html"
+            templateUrl: "nav/menu/favourite.html"
         })
         .when("/login", {
-            templateUrl: "menu/login.html"
+            templateUrl: "nav/menu/login.html"
         })
         .when("/shoppingCard", {
-            templateUrl: "menu/shoppingCart.html"
+            templateUrl: "nav/menu/shoppingCart.html"
         })
         .when("/register", {
-            templateUrl: "menu/register.html"
+            templateUrl: "nav/menu/register.html"
         })
         .when("/iora1", {
             templateUrl: "nav/iORA_1.html"
@@ -306,12 +306,12 @@ app.config(function($routeProvider) {
         })
 
 
-        
-        .when("/lalu/stories", {
-            templateUrl: "lalu/stories.html"
-        })
 
-        .when("/lalu/stories/lalu2022", {
+    .when("/lalu/stories", {
+        templateUrl: "lalu/stories.html"
+    })
+
+    .when("/lalu/stories/lalu2022", {
             templateUrl: "lalu/stories/lalu2022.html"
         })
         .when("/lalu/stories/lalu2021", {
@@ -323,7 +323,7 @@ app.config(function($routeProvider) {
         .when("/lalu/stories/lalu2019", {
             templateUrl: "lalu/stories/lalu2019.html"
         })
-        
+
 })
 
 
