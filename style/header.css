@@ -54,7 +54,7 @@ a {
     margin: auto;
 }
 
-.naBar ul {
+.naBar#center ul {
     margin-left: 13%;
     display: flex;
     width: 70%;

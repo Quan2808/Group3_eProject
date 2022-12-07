@@ -20,7 +20,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="jsLALU.js"></script>
     <script src="Link.js"></script>
     <style>
@@ -39,8 +39,45 @@
             display: none;
         }
         
+        @media only screen and (min-width: 992px) {
+            .navbar {
+                margin-bottom: 2%;
+            }
+            .navbar .nav-item .dropdown-menu {
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                transition: .7s;
+                margin-top: 0;
+            }
+            .navbar .dropdown-menu.fade-down {
+                top: 80%;
+                transform: rotateX(-75deg);
+                transform-origin: 0% 0%;
+            }
+            .navbar .dropdown-menu.fade-up {
+                top: 180%;
+            }
+            .navbar .nav-item:hover .dropdown-menu {
+                transition: .7s;
+                opacity: 1;
+                visibility: visible;
+                top: 100%;
+                transform: rotateX(0deg);
+            }
+        }
+        
         #top-up:hover {
             color: #333
+        }
+        
+        .unselectable {
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: #cc0000;
         }
     </style>
     <title>iORA - Online Shopping</title>
@@ -63,11 +100,8 @@
                         <a style="text-decoration:none;" href="#!findStore"> Find a store</a>
                     </div>
                     <div>
-                        <a style="text-decoration:none;" href="#!" style="font-size: 40px; font-family:'Times New Roman', Times, serif ;">
-                            <h1>
-                                iORA
-                            </h1>
-                        </a>
+                        <a class="unselectable" href="#!" style="font-size: 40px; font-family: 'Times New Roman', Times, serif;">iORA</a>
+
                     </div>
                     <div>
                         <a style="text-decoration:none;" href="#!favourite">
@@ -127,79 +161,70 @@
                                 </div> -->
                     </div>
                 </div>
-                <div class="naBar">
-                    <ul>
-                        <li>
-                            <div class="dropdown">
-                                <div class="dropbtn">
-                                    <a style="text-decoration:none;" href="#!iora1">iORA</a>
-                                </div>
-                                <div class="dropdown-content">
-                                    <a href="#!iora7">NEW ARRIVALS</a>
-                                    <a href="#!iora9">TOPS</a>
-                                    <a href="#!iora5">BOTTOMS</a>
-                                    <a href="#!iora8">SKIRTS</a>
-                                    <a href="#!iora6">KNITS & SWEATERS</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <div class="dropbtn"><a style="text-decoration:none;" href="#!lalu">LALU</a></div>
-                                <div class="dropdown-content">
-                                    <a href="#!lalunewarri">NEW ARRIVALS</a>
 
-                                    <a href="#!lalubottom">BOTTOMS</a>
-                                    <a href="#!laluskirts">SKIRTS</a>
-
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">iORA</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#!iora1">Home</a>
+                                    <a class="dropdown-item" href="#!iora7">NEW ARRIVALS</a>
+                                    <a class="dropdown-item" href="#!iora9">TOPS</a>
+                                    <a class="dropdown-item" href="#!iora5">BOTTOMS</a>
+                                    <a class="dropdown-item" href="#!iora8">SKIRTS</a>
+                                    <a class="dropdown-item" href="#!iora6">KNITS & SWEATERS</a>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <div class="dropbtn"><a style="text-decoration:none;" href="#!Accessories">ACCESSORIES</a></div>
-                                <div class="dropdown-content">
-                                    <a href="#!bags1">BAGS</a>
-                                    <a href="#!shoe1">SHOES</a>
-
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LALU</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#!lalu">Home</a>
+                                    <a class="dropdown-item" href="#!lalunewarri">NEW ARRIVALS</a>
+                                    <a class="dropdown-item" href="#!lalubottom">BOTTOMS</a>
+                                    <a class="dropdown-item" href="#!laluskirts">SKIRTS</a>
                                 </div>
-                            </div>
-                        </li>
-                        <li><a style="text-decoration:none;color:yellowgreen; margin-right: 20px; " href="#!onlineexclusive">
-                            ONLINE EXCLUSIVE</a></li>
-                        <li><a href="#!sale" style="text-decoration:none; color:red">SALE</a></li>
-
-                        <li>
-                            <div class="dropdown">
-                                <div class="dropbtn"><a style="text-decoration:none;" href="">BUNDLE DEAL</a></div>
-                                <div class="dropdown-content">
-                                    <a href="#!bundledeal1">2 FOR $29.90</a>
-                                    <a href="#!bundledeal2">2 FOR $49.90</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ACCESSORIES</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#!Accessories">Home</a>
+                                    <a class="dropdown-item" href="#!bags1">BAGS</a>
+                                    <a class="dropdown-item" href="#!shoe1">SHOES</a>
                                 </div>
-                            </div>
-                        </li>
-                        <li><a style="text-decoration:none;" href="">BACK IN STOCK</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <div class="dropbtn">
-                                    <a href="#!Stories">STORIES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="text-decoration:none;color:yellowgreen;" href="#!onlineexclusive">ONLINE EXCLUSIVE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#!sale" style="text-decoration:none; color:red">SALE</a></li>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BUNDLE DEAL</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#!bundledeal1">2 FOR $29.90</a>
+                                    <a class="dropdown-item" href="#!bundledeal2">2 FOR $49.90</a>
                                 </div>
-                                <div class="dropdown-content">
-                                    <a href="#">iORA</a>
-                                    <a href="#!lalu/stories">LALU</a>
-                        
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stories</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#!Stories">STORIES</a>
+                                    <a class="dropdown-item" href="#!lalu/stories">LALU</a>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
 
         <div ng-view></div>
         <!-- footer -->
         <div>
-
             <div class="commit">
                 <div><img style="width:20px" height="20px" src="image/return.png" alt=""> 30-day Retail Exchange</div>
                 <div><img style="width:20px" height="20px" src="image/box.png" alt=""> Click and Collect</div>
@@ -218,7 +243,6 @@
                             <a href="#!AboutUs"> ABOUT US </a>
                             <a href="#!ContactUs"> CONTACT US</a>
                             <a href="#!findStore"> STORES</a>
-
                             <a href="#!on-going promotions"> ON-GOING PROMOTIONS</a>
                             <a href="#!campaigns"> CAMPAIGNS </a>
                             <a href="#!careers"> CAREERS</a>
@@ -226,7 +250,6 @@
                             <a href="#!returns-exchange"> RETURNS & EXCHANGE</a>
                             <a href="#!methods-cost"> DELIVERY METHODS & COSTS</a>
                         </p>
-
                     </div>
                     <p>
                         Copyright © 2022 iORA SINGAPORE, all rights reserved. <br>
@@ -235,7 +258,7 @@
 
                     </p>
 
-                    <div> <br><img style="width: 260px;height: 28px;" src="image/payment-gateway-sg.jpg" alt=""></div>
+                    <div><img style="width: 260px;height: 28px;" src="image/payment-gateway-sg.jpg" alt=""></div>
                 </div>
             </div>
         </div>

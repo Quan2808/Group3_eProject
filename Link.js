@@ -326,9 +326,6 @@ app.config(function($routeProvider) {
 
 })
 
-
-
-
 var offset = 300;
 // thời gian di trượt 0.75s ( 1000 = 1s )
 var duration = 150;
