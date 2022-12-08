@@ -21,7 +21,7 @@
         display: block;
         opacity: 0;
         visibility: hidden;
-        transition: .7s;
+        transition: .3s;
         margin-top: 0;
     }
     .navbar .dropdown-menu.fade-down {
@@ -33,7 +33,7 @@
         top: 180%;
     }
     .navbar .nav-item:hover .dropdown-menu {
-        transition: .7s;
+        transition: .3s;
         opacity: 1;
         visibility: visible;
         top: 100%;

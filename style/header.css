@@ -106,3 +106,7 @@ a {
 .dropdown:hover .dropbtn {
     color: rgb(179, 179, 179);
 }
+
+#fix-botton {
+    margin-bottom: 5%;
+}
