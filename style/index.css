@@ -61,3 +61,11 @@
 .col-sm-4 p a:hover {
     color: #6c757d!important;
 }
+
+.navbar .nav-link {
+    cursor: pointer;
+}
+
+.ng-view {
+    margin-top: 14%;
+}
