@@ -15,7 +15,6 @@
     <style>
         .page-title {
             text-align: center;
-            font-family: 'Times New Roman', Times, serif;
         }
         
         table {
@@ -39,6 +38,14 @@
             font-size: 22px;
             margin-left: 25px;
         }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -47,31 +54,30 @@
         <div ng-include="'header.html'"></div>
         <h1 class="page-title">CAREERS</h1>
         <br>
-        <table>
-            <tr>
-                <td style="font-size:medium ;">iORA is a leading regional fashion group with 26 stores island wide and has established presence in major Southeast Asia markets . With 2 <br> decades of design, manufacturing and retail track record in fashion, the iORA specializes in
-                    providing fashion clothing and accessories for <br> women.
-                </td>
-            </tr>
-            <tr>
-                <td style="font-size: medium;">
-                    Like to register your interest for future opportunities? For any other career enquiries, please send in your resume attached with a recent photo <br> of yourself to
-                    <a href="https://outlook.live.com/" class="link">hello@iora.com.sg</a> with the subject: “Application for [Position Name]”. Only shortlisted candidates will be contacted.
-                </td>
-            </tr>
-        </table>
-        <br>
-        <table>
-            <tr>
-                <td>
-                    <div class="container mt-4">
-                        <div class="  btn-group dropdown">
-                            <button type="button" class=" btn-lg btn-secondary dropdown-toggle" id="id1" data-toggle="dropdown">
-                    FASHION DESINGER</button>
-                            <div class="dropdown-menu">
-                                <h2>Job Description</h2>
-                                <ul class="word">
-                                    <a href=""></a>
+        <div class="container">
+            <p>
+                iORA is a leading regional fashion group with 26 stores island wide and has established presence in major Southeast Asia markets . With 2 decades of design manufacturing and retail track record in fashion, the iORA specializes in providing fashion clothing
+                and accessories for women.
+            </p>
+            <p>
+                Like to register your interest for future opportunities? For any other career enquiries, please send in your resume attached with a recent photo of yourself to
+                <a href="https://outlook.live.com/" class="link">hello@iora.com.sg</a> with the subject: “Application for [Position Name]”. Only shortlisted candidates will be contacted.
+            </p>
+            <div id="accordion" style="text-decoration: noe;">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            FASHION DESINGER
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Description</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Trend research and develop apparel collections for each season</li>
                                     <li>Liaise with factories and offices based in China</li>
                                     <li>Perform design analysis</li>
@@ -81,33 +87,40 @@
                                     <li>Ability to style and display all items in boutiques to create seasonal design directions</li>
                                     <li>Based in retail front</li>
                                 </ul>
-                                <h2>Job Requirements</h2>
-                                <ul class="word">
-                                    <li>Creative with a keen eye for aesthetics, highly adaptable to fast-paced retail environment.</li>
-                                    <li>Active, energetic and loves being on trend</li>
-                                    <li>Possess sense of responsibility and spontaneous in every task</li>
-                                    <li>Good verbal, communication and selling skills.</li>
-                                    <li>Minimum “O levels”</li>
-                                    <li>Basic IT proficiency to use electronic devices, computers, scanners etc</li>
+                            </p>
+                            <h5 class="card-title">Job Requirements</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Diploma/ Degree in Fashion Design or related subjects</li>
+                                    <li>Good interpersonal and communication skills</li>
+                                    <li>Excellent command of written and spoken English and Mandarin to liaise with counterparts</li>
+                                    <li>Initiative, eye for details and a team player</li>
+                                    <li>Resourceful, flexible and responsive in dealing with people</li>
+                                    <li>Ability to work under pressure, short deadlines and extra hours if needed on assignments</li>
+                                    <li>Proficient in MS Office, Photoshop and Illustrator</li>
+                                    <li>With good organizational skills, creative thinking, confident personality and<br> entrepreneurial mind</li>
+                                    <li>5.5 days work week; hours may differ depending on requirements</li>
+                                    <li>Interested candidates, please send in your detailed resume to <a class="text-dark" href="mailto:hello@iora.com.sg">hello@iora.com.sg</a></li>
+                                    <li>Only shortlisted candidates will be notified</li>
                                 </ul>
-                            </div>
+                            </p>
                         </div>
                     </div>
-
-                </td>
-            </tr>
-        </table>
-
-        <table>
-            <tr>
-                <td>
-                    <div class="container mt-4">
-                        <div class=" btn-group">
-                            <button type="button" data-toggle="dropdown" class=" my-1 btn-lg btn-custom dropdown-toggle" id="id1">
-                    FASHION MERCHANDISER</button>
-                            <div class="dropdown-menu">
-                                <h2>Job Description</h2>
-                                <ul class="word">
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                FASHION MERCHANDISER
+                      </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Description</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Liaise with factories and offices based in China.</li>
                                     <li>Handle purchase orders</li>
                                     <li>Frequent shop visits to understand customers’ needs</li>
@@ -116,16 +129,20 @@
                                     <li>Evaluate the sales report and strategize to boost the sales achievement</li>
                                     <li>Overseas assignments may be appointed</li>
                                 </ul>
-                                <h2>Job Requirements</h2>
-                                <ul class="word">
+                            </p>
+                            <h5 class="card-title">FASHION MERCHANDISER</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Candidate must possess at least Bachelor’s Degree/Post Graduate Diploma/Professional Degree in Mathematics, Business Studies/Administration/Management, Textile/Fashion CDesign or equivalent.</li>
-                                    <li>CRequired language(s): Mandarin, English (in order to handle feedbacks and queries from Mandarin & English speaking associates)</li>
+                                    <li>CRequired language(s): Mandarin, English (in order to handle feedbacks and queries from Mandarin &amp; English speaking associates)</li>
                                     <li>CAt least 1 Year(s) of working experience in the related field is required for this position.</li>
                                     <li>CRequired Skill(s): MS OFFICE</li>
                                     <li>CPreferably Junior Executive specialized in Merchandising or equivalent.</li>
                                 </ul>
-                                <h2>Additional Information</h2>
-                                <ul class="word">
+                            </p>
+                            <h5 class="card-title">Additional Information</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Additional Information</li>
                                     <li>Career Level: Junior Executive</li>
                                     <li>Qualification: Bachelor’s Degree, Post Graduate Diploma, Professional Degree</li>
@@ -133,24 +150,24 @@
                                     <li>Job Type: Full-Time</li>
                                     <li>Job Specializations: Sales/Marketing, Merchandising</li>
                                 </ul>
-                            </div>
+                            </p>
                         </div>
                     </div>
-
-                </td>
-            </tr>
-        </table>
-
-        <table>
-            <tr>
-                <td>
-                    <div class="container mt-4">
-                        <div class=" btn-group dropdown">
-                            <button type="button" class=" my-1 btn-lg btn-custom dropdown-toggle" id="id1" data-toggle="dropdown">
-                    ECOMMERCE & DIGITAL MARKETING EXE.</button>
-                            <div class="dropdown-menu">
-                                <h2>Job Description</h2>
-                                <ul class="word">
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ECOMMERCE & DIGITAL MARKETING EXE.
+                      </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Description</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Monitor, track and ensure smooth execution of social, digital and eCommerce campaigns, sales, site performance & product update on eCommerce platform, website and other online sales & marketing</li>
                                     <li>Content management and creation for all social and online platforms to improve traffic and conversion rate</li>
                                     <li>Audit sites on an ongoing basis to focus on accuracy of content and campaign promotions</li>
@@ -164,8 +181,10 @@
                                     <li>Identify improvements to service levels, operational policy, procedures and goals and design standard operational procedures for staff.</li>
                                     <li>Facilitates and implement marketing strategies that help to increase awareness, reach and likes from social media and existing customers.</li>
                                 </ul>
-                                <h2>Job Requirements</h2>
-                                <ul class="word">
+                            </p>
+                            <h5 class="card-title">Job Requirements</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Diploma or Degree holder in Marketing/Business</li>
                                     <li>Experience with digital, social media and eCommerce platform is preferred which includes updating of social media sites</li>
                                     <li>Knowledge & experience in Adobe Photoshop and Illustrator</li>
@@ -194,53 +213,88 @@
                                     <li>Required Skill(s): Photoshop, illustrator</li>
                                     <li>Preferably Entry Level specialized in E-commerce or equivalent.</li>
                                 </ul>
-                            </div>
+                            </p>
                         </div>
                     </div>
-
-                </td>
-            </tr>
-        </table>
-
-        <table>
-            <tr>
-                <td>
-                    <div class="container mt-4">
-                        <div class=" dropdown">
-                            <button type="button" class=" my-1 btn-lg btn-custom dropdown-toggle" id="id1" data-toggle="dropdown">
-                    PERMANENT PART TIMERS</button>
-                            <div class="dropdown-menu">
-                                <h2>Job Description</h2>
-                                <ul class="word">
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                PERMANENT PART TIMERS
+                      </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Description</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Handling of merchandise and by doing shifting, sorting and packing</li>
                                     <li>Accurately sort, label and store goods to optimize warehouse space</li>
                                     <li>Pick, pack and dispatch outgoing goods according to written orders</li>
                                     <li>Maintain up to date stock records, warehousing and housekeeping</li>
                                     <li>Retrieve, sort information to respond to enquiries for example on delivery schedules and inventory levels</li>
                                 </ul>
-                                <h2>Job Requirements</h2>
-                                <ul class="word">
+                            </p>
+                            <h5 class="card-title">Job Requirements</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Minimum “O levels”</li>
                                     <li>Basic IT proficiency to use electronic devices, computers, scanners etc</li>
                                 </ul>
-                            </div>
+                            </p>
                         </div>
                     </div>
 
-                </td>
-            </tr>
-        </table>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                PERMANENT PART TIMERS
+                      </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Description</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Handling of merchandise and by doing shifting, sorting and packing</li>
+                                    <li>Accurately sort, label and store goods to optimize warehouse space</li>
+                                    <li>Pick, pack and dispatch outgoing goods according to written orders</li>
+                                    <li>Maintain up to date stock records, warehousing and housekeeping</li>
+                                    <li>Retrieve, sort information to respond to enquiries for example on delivery schedules and inventory levels</li>
+                                </ul>
+                            </p>
+                            <h5 class="card-title">Job Requirements</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Minimum “O levels”</li>
+                                    <li>Basic IT proficiency to use electronic devices, computers, scanners etc</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
 
-        <table>
-            <tr>
-                <td>
-                    <div class="container mt-4">
-                        <div class=" btn-group dropdown">
-                            <button type="button" class=" my-1 btn-lg btn-custom dropdown-toggle" id="id1" data-toggle="dropdown">
-                    RETAIL SALES ASSOCIATE</button>
-                            <div class="dropdown-menu">
-                                <h2>Job Description</h2>
-                                <ul class="word">
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                RETAIL SALES ASSOCIATE
+                      </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Description</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Greeting customers and offering assistance</li>
                                     <li>Handling customer enquiries/requests</li>
                                     <li>Carry out store opening and closing activities</li>
@@ -250,8 +304,10 @@
                                     <li>Handling stock inventory taking, replenishment and transfers</li>
                                     <li>To assist in any ad-hoc duties & activities as needed</li>
                                 </ul>
-                                <h2>Job Requirements</h2>
-                                <ul class="word">
+                            </p>
+                            <h5 class="card-title">Job Requirements</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Creative with a keen eye for aesthetics, highly adaptable to fast-paced retail environment.</li>
                                     <li>Active, energetic and loves being on trend</li>
                                     <li>Possess sense of responsibility and spontaneous in every task</li>
@@ -259,24 +315,25 @@
                                     <li>Minimum “O levels”</li>
                                     <li>Basic IT proficiency to use electronic devices, computers, scanners etc</li>
                                 </ul>
-                            </div>
+                            </p>
                         </div>
                     </div>
 
-                </td>
-            </tr>
-        </table>
-
-        <table>
-            <tr>
-                <td>
-                    <div class="container mt-4">
-                        <div class=" btn-group dropdown">
-                            <button type="button" class=" my-1 btn-lg btn-custom dropdown-toggle" id="id1" data-toggle="dropdown">
-                    RETAIL OPERATION EXECUTIVE</button>
-                            <div class="dropdown-menu">
-                                <h2>Job Description</h2>
-                                <ul class="word">
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                RETAIL OPERATION EXECUTIVE
+                      </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Description</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Assist Operation Director in retail operation including planning, staff training, market analysis, reports preparation</li>
                                     <li>Manage staff appraisals</li>
                                     <li>Provide customer service</li>
@@ -286,8 +343,10 @@
                                     <li>Issues memo for cashier payment.</li>
                                     <li>To conduct stocks packing neat and tidy</li>
                                 </ul>
-                                <h2>Job Requirements</h2>
-                                <ul class="word">
+                            </p>
+                            <h5 class="card-title">Job Requirements</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Must be willing to work retail hours</li>
                                     <li>Good communication & multi-tasking skills</li>
                                     <li>Good team player, self-discipline with strong interpersonal skills</li>
@@ -295,23 +354,25 @@
                                     <li>Proficient in MS office application, in particular MS Excel (Able to use functions such as VLOOKUP, Conditional formatting and Pivot Table)</li>
                                     <li>Candidate must possess at least Diploma/Advanced/Higher/Graduate Diploma in Business Studies/Administration/Management, Supply Chain Management or equivalent.</li>
                                 </ul>
-                            </div>
+                            </p>
                         </div>
                     </div>
-                </td>
-            </tr>
-        </table>
 
-        <table>
-            <tr>
-                <td>
-                    <div class="container mt-4">
-                        <div class=" dropdown">
-                            <button type="button" class=" my-1 btn-lg btn-custom dropdown-toggle  dropdown-toggle-split" id="id1" data-toggle="dropdown">
-                    VISUAL MERCHANDISER</button>
-                            <div class="dropdown-menu">
-                                <h2>Job Description</h2>
-                                <ul class="word">
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                VISUAL MERCHANDISER
+                      </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Description</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Creating and maintaining the presentation of merchandise that will help to stimulate sales</li>
                                     <li>Changing and maintaining the cleanliness and functionality of fixtures, signage, lights and equipment</li>
                                     <li>Training the store steam on design concept, visual display standards</li>
@@ -319,8 +380,10 @@
                                     <li>Producing window display, signs, interior displays, floor plans and special promotions display</li>
                                     <li>Partial Schedule to be based in shopfront</li>
                                 </ul>
-                                <h2>Job Requirements</h2>
-                                <ul class="word">
+                            </p>
+                            <h5 class="card-title">Job Requirements</h5>
+                            <p class="card-text">
+                                <ul>
                                     <li>Candidate must possess at least Diploma/Advanced/Higher/Graduate Diploma in Fashion Design, Multimedia / Design or related field</li>
                                     <li>Creative with a keen eye for aesthetics, highly adaptable to fast-paced retail environment</li>
                                     <li>Excellent interpersonal and communication skills</li>
@@ -328,13 +391,13 @@
                                     <li>Proficient in Machintosh applications, Indesign, Photoshop, Illustrator, Acrobat, Freehand, Image Ready, Auto-CAD and SketchUp</li>
                                     <li>Responsible and proactive team player</li>
                                 </ul>
-                            </div>
+                            </p>
                         </div>
                     </div>
-                </td>
-            </tr>
-        </table>
 
+                </div>
+            </div>
+        </div>
         <br>
         <br>
 
