@@ -85,7 +85,7 @@ a {
     margin-top: -15px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    padding: 15px;
+    padding: 3%;
 }
 
 .dropdown-content a {
@@ -109,4 +109,10 @@ a {
 
 #fix-botton {
     margin-bottom: 5%;
+}
+
+#tittle_pr {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
 }
