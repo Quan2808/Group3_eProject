@@ -68,3 +68,8 @@
 .ng-view {
     margin-top: 14%;
 }
+
+.disabled a {
+    cursor: pointer;
+    text-decoration: none;
+}
