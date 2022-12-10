@@ -26,19 +26,6 @@ body {
     padding-top: 10px;
 }
 
-.menu {
-    margin-top: 15px;
-    margin-left: -15%;
-    display: flex;
-    width: 96%;
-    margin-left: 5px;
-}
-
-.menu img {
-    cursor: pointer;
-    margin-left: 10px;
-}
-
 .menu div {
     margin: auto;
 }
@@ -54,7 +41,7 @@ a {
     margin: auto;
 }
 
-.naBar#center ul {
+.naBar #center ul {
     margin-left: 13%;
     display: flex;
     width: 70%;
