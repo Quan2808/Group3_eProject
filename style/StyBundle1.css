@@ -53,10 +53,3 @@ img {
     text-decoration: none;
 }
 
-.card-bundle-deal {
-    transition: transform.2s;
-}
-
-.card-bundle-deal:hover {
-    transform: scale(1.1);
-}
