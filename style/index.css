@@ -73,3 +73,9 @@
     cursor: pointer;
     text-decoration: none;
 }
+
+@media (min-width: 480px) {
+    .ng-view {
+        margin-top: 30%;
+    }
+}
