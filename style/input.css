@@ -1,0 +1,67 @@
+a {
+    text-decoration: none;
+}
+
+.form_input {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    width: 440px;
+    height: 50px;
+    padding: 0 15px;
+    transition: .4s ease;
+}
+
+.form_field {
+    position: relative;
+}
+
+.form_label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    user-select: none;
+    pointer-events: none;
+    transition: .4s ease;
+}
+
+.form_input:not(:placeholder-shown)+.form_label,
+.form_input:focus+.form_label {
+    top: 0;
+    left: 6px;
+    padding: 0 10px;
+    display: inline-block;
+    background-color: white;
+}
+
+.Sign_in_by_social_account button img {
+    margin: 0 .5rem;
+}
+
+.Sign_in_by_social_account {
+    width: 440px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Sign_in_by_social_account button {
+    width: 440px;
+    height: 50px;
+    background-color: white;
+    outline: none;
+    font-weight: bold;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 20px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.Sign_in_by_social_account button:hover {
+    background-color: #6c757d;
+    color: #fff;
+    transition: .3s;
+}
+
+.col-sm-8 .form_field .form_input {
+    width: 240px;
+}

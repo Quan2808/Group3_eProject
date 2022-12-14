@@ -13,6 +13,9 @@ app.config(function($routeProvider) {
         .when("/login", {
             templateUrl: "nav/menu/login.html"
         })
+        .when("/LostPass", {
+            templateUrl: "nav/menu/Lost_password.html"
+        })
         .when("/shoppingCard", {
             templateUrl: "nav/menu/shoppingCart.html"
         })
