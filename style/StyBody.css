@@ -85,3 +85,12 @@ img {
 a {
     text-decoration: none;
 }
+
+.card-title {
+    text-align: justify;
+}
+
+.px-2 {
+    margin-right: 2%;
+    margin-left: 8%;
+}
